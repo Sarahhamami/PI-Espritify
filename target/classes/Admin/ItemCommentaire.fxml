@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="219.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Admin.CommentaireController">
+   <children>
+      <Label fx:id="nom" layoutX="74.0" layoutY="22.0" prefHeight="18.0" prefWidth="98.0" text="Nom et Prenom" textFill="#990000" />
+      <Label fx:id="date" layoutX="430.0" layoutY="13.0" prefHeight="18.0" prefWidth="136.0" text="Date" textFill="#a49696" />
+      <Label fx:id="description" layoutX="216.0" layoutY="57.0" prefHeight="94.0" prefWidth="354.0" text="Label" />
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="19.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/images/utilisateur.png" />
+      </image>
+   </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="7.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@/images/coeur.png" />
+      </image>
+   </ImageView>
+      <Label layoutX="150.0" layoutY="95.0" text="contenue :" textFill="#8e8686" />
+      <Line endX="887.892822265625" endY="1.52587890625E-5" layoutX="109.0" layoutY="212.0" startX="-109.00001525878906" stroke="#990000" />
+      <Line endX="886.8999633789062" endY="1.1444091796875E-5" layoutX="111.0" layoutY="54.0" startX="-110.99999237060547" stroke="#990000" />
+      <Line endX="889.69287109375" endY="1.52587890625E-5" layoutX="108.0" layoutY="203.0" startX="-107.99998474121094" stroke="#990000" />
+   </children>
+</AnchorPane>
