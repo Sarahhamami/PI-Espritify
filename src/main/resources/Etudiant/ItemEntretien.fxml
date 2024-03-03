@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="1042.0" spacing="25.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Etudiant.ItemEntretienController">
+    <children>
+
+        <ImageView fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/icons8_GPS_Antenna_64px_1.png" />
+            </image>
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </ImageView>
+        <Label fx:id="lieu" prefHeight="17.0" prefWidth="236.0" textFill="#A6A6A6">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+
+        <Label fx:id="nom_soc" prefHeight="17.0" prefWidth="136.0" textFill="#A6A6A6">
+
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="date" prefHeight="17.0" prefWidth="208.0" textFill="#A6A6A6">
+
+            <HBox.margin>
+                <Insets left="50.0" />
+            </HBox.margin>
+        </Label>
+
+        <Button layoutY="-100.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="100.0" style="-fx-border-color: #ffffff; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../CSS/style.css" onAction="#VoirDesc">
+            <graphic>
+                <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="330.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                        <Image url="@/images/a-propos-de-nous.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutY="-100.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="100.0" style="-fx-border-color: #ffffff; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../CSS/style.css" onAction="#participer">
+            <graphic>
+                <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="330.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                        <Image url="@/images/dossier.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+</HBox>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="1026.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Etudiant.VoiceAssistantpopup">
+   <children>
+
+
+
+      <Label layoutX="250.0" layoutY="38.0" text="Salut! Je suis Espritifia" textFill="#990000">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="label" layoutX="511.0" layoutY="104.0" prefHeight="35.0" prefWidth="276.0" />
+      <Button fx:id="cancelBtn" layoutX="892.0" layoutY="6.0" onAction="#closePopup" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="330.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+
+                  <Image url="@/images/bouton-supprimer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="208.0" layoutY="108.0" text="Votre commande est: " textFill="#990000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fx:id="droite" fitHeight="270.0" fitWidth="922.0" layoutX="88.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+
+            <Image url="@/images/ballon-de-parole.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="GAUCHE" fitHeight="226.0" fitWidth="496.0" layoutX="451.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+
+            <Image url="@/images/ballon-de-parole----gauche.png" />
+         </image>
+      </ImageView>
+   
+      <Label fx:id="response" layoutX="131.0" layoutY="227.0" prefHeight="17.0" prefWidth="340.0" />
+      <ImageView fitHeight="99.0" fitWidth="211.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+
+         <Image url="@/images/voix-des-femmes.png" />
+      </image>
+      </ImageView>
+   </children>
+</AnchorPane>

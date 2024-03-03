@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Success Button */
+.success-button {
+    -fx-background-color: -color-success-bg;
+    -fx-text-fill: -color-success-fg;
+    -fx-border-color: -color-success-border;
+}
+
+.success-button:hover {
+    -fx-background-color: -color-success-bg-hover;
+    -fx-text-fill: -color-success-fg-hover;
+    -fx-border-color: -color-success-border-hover;
+}
+
+.success-button:focused {
+    -fx-text-fill: -color-fg-emphasis;
+    -fx-border-color: -color-success-border-emphasis;
+}
+
+.success-button:pressed {
+    -fx-background-color: -color-success-bg-pressed;
+    -fx-text-fill: -color-success-fg-pressed;
+    -fx-border-color: transparent;
+}
